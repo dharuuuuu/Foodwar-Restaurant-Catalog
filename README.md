@@ -11,8 +11,5 @@ Foodwar Web Apps is a website to show restaurant catalog, users can see details 
 - Favorite
   - Show the favorite restaurant
  
- ## Hosting
- [https://foodwar-apps-final.web.app](https://foodwar-apps-final.web.app/)
- 
  ## Created By
  **Dimas Dharu Ramadhan**
