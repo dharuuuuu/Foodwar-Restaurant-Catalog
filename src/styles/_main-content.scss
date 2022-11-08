@@ -1,0 +1,115 @@
+// Title-content
+.info__content {
+    text-align: center;
+    margin: 0 auto;
+    padding: 32px;
+    .title__content {
+        position: relative;
+        display: inline-block;
+        color: rgba(0,0,0,.9);
+        font-size: 27px;
+        margin-top: 50px;
+        font-weight: 600;
+    }
+}
+.favorire-title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 32px;
+    .title__content {
+        position: relative;
+        display: inline-block;
+        color: rgba(0,0,0,.9);
+        font-size: 27px;
+        margin-top: 30px;
+        font-weight: 600;
+    }
+}
+.line_small, .line_big {
+    margin: 3px auto;
+    width: 50px;
+    border-top:  2px solid $yellowdark;
+}
+.line_big {
+    width: 100px;
+}
+
+// List-restaurant
+.top__resto {
+    margin: 20px 0;
+    padding: 0 20px;
+    
+}
+.list__resto, #favoriteContainer {
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.resto__item {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 10px 20px 0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    position: relative;
+    border-radius: 10px;
+    .img {
+        width: 300px;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+    }
+    .title__resto {
+        text-align: center;
+        a {
+            display: block;
+            font-size: 20px;
+            color: $primary-text;
+            text-decoration: none;
+            min-width: 44px;
+            min-height: 44px;
+            padding-top: 13px;
+            &:hover {
+                color: $yellowdark;
+            }
+        }
+    }
+    .description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+        padding: 0px 16px 0px 20px;
+        font-size: 16px;
+    }
+    .location {
+        display: flex;
+        padding: 20px 0 20px 10px;
+        .marker {
+            width: 18px;
+            height: 18px;
+            margin-right: 5px;
+            filter: invert(69%) sepia(67%) saturate(464%) hue-rotate(3deg) brightness(93%) contrast(86%);
+        }
+    }
+    .rating__resto {
+        text-align: center;
+        background-color: $yellowdark;
+        position: absolute;
+        border-radius: 0 10px 10px 0;
+        width: 65px;
+        .gap {
+            padding: 10px 5px 10px 5px;
+            .star {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    }
+}
